@@ -1,7 +1,9 @@
-export const ProfileCard = ({item: { username, tag, location, avatar, stats: {followers, views, likes } } }) => {
+import { ProfileDiv } from "./ProfileCard.styles";
+
+export const ProfileCard = ({ item: { username, tag, location, avatar, stats: { followers, views, likes } } }) => {
     
     return (
-        <div>
+        <ProfileDiv>
             <div>
                 <img src={avatar} alt="user avatar" />
                 <p> {username} </p>
@@ -22,7 +24,7 @@ export const ProfileCard = ({item: { username, tag, location, avatar, stats: {fo
                     <span> {likes} </span>
                 </li>
             </ul>
-        </div>
+        </ProfileDiv>
     
     );
 };
