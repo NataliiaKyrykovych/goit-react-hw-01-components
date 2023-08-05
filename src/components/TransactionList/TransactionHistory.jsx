@@ -1,27 +1,29 @@
+import { TransactionTable, HeaderTr, TransitionTd } from "./TransactionHistory.styled"
+
 export const TransactionHistory = ({ items }) => {
     
     return (
         <div>
-            <table class="transaction-history">
+            <TransactionTable>
               <thead>
-                <tr>
+                <HeaderTr>
                     <th>Type</th>
                     <th>Amount</th>
                     <th>Currency</th>
-                </tr>
+                </HeaderTr>
               </thead>
 
               <tbody>
                 {items.map(({id, amount, currency, type}) => (
                 <tr key={id}>
-                    <td>{type}</td>
-                    <td>{amount}</td>
-                    <td>{currency}</td>
+                    <TransitionTd>{type}</TransitionTd>
+                    <TransitionTd>{amount}</TransitionTd>
+                    <TransitionTd>{currency}</TransitionTd>
                 </tr>
                 ))}
     
               </tbody>
-            </table>
+            </TransactionTable>
            
         </div>
     )
