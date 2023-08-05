@@ -7,6 +7,8 @@ import friend from './FriendList/friends.json';
 import { TransactionHistory } from "./TransactionList/TransactionHistory";
 import transactions from './TransactionList/transactions.json';
 
+import { GlobalStyle } from "./GlobalStyle";
+
 
 
 export const App = () => {
@@ -16,7 +18,8 @@ export const App = () => {
       <ProfileCard item={user} />
       <Statistics stats={data} /> 
       <FriendList friends={friend} />
-      <TransactionHistory items={transactions} />;
+      <TransactionHistory items={transactions} />
+      <GlobalStyle />
     </div>
   );
 };

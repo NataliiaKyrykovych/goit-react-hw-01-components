@@ -1,11 +1,13 @@
-export const FriendList = ({friends}) => {
+import { List } from "./FriendList.styled"
+
+export const FriendList = ({ friends }) => {
     
     return (
     
         <>
   
 
-    <ul class="friend-list">
+    <List class="friend-list">
                 
         {friends.map(({avatar, name, isOnline}) => (
                 <li class='status'>
@@ -16,7 +18,7 @@ export const FriendList = ({friends}) => {
             ))}
 
     
-  </ul>
+  </List>
 </>
 )
 
