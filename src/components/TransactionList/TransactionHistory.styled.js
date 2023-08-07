@@ -3,11 +3,12 @@ import styled from 'styled-components';
 export const TransactionTable = styled.table`
   width: 500px;
   border-collapse: collapse;
-  margin: 30px 20px;
+  margin: 0px auto;
+
 `;
 
 export const HeaderTr = styled.tr`
-  background-color: lightblue;
+  background-color: lightgreen;
 `;
 
 export const TransitionTd = styled.td`

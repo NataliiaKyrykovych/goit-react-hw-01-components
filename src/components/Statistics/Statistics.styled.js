@@ -4,7 +4,8 @@ export const StatSection = styled.section`
   text-align: center;
   width: 500px;
   border: 1px solid black;
-  margin: 40px 20px;
+  margin: 0px auto;
+  margin-bottom: 50px;
 `;
 
 export const StatsList = styled.ul`

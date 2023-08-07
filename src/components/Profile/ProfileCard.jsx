@@ -1,29 +1,29 @@
-import { ProfileDiv } from "./ProfileCard.styles";
+import { ProfileDiv,Avatar, ProfileName, ProfileTag, ProfileLocation, StaticList, StaticItem, UserDiv } from "./ProfileCard.styles";
 
 export const ProfileCard = ({ item: { username, tag, location, avatar, stats: { followers, views, likes } } }) => {
     
     return (
         <ProfileDiv>
-            <div>
-                <img src={avatar} alt="user avatar" />
-                <p> {username} </p>
-                <p>@ {tag} </p>
-                <p> {location} </p>
-            </div>
-            <ul>
-                <li>
+            <UserDiv>
+                <Avatar src={avatar} alt="user avatar" />
+                <ProfileName> {username} </ProfileName>
+                <ProfileTag>@ {tag} </ProfileTag>
+                <ProfileLocation> {location} </ProfileLocation>
+            </UserDiv>
+            <StaticList>
+                <StaticItem>
                     <span>Followers</span>
                     <span> {followers} </span>
-                </li>
-                <li>
+                </StaticItem>
+                <StaticItem>
                     <span>Views</span>
                     <span> {views} </span>
-                </li>
-                <li>
+                </StaticItem>
+                <StaticItem>
                     <span>Likes</span>
                     <span> {likes} </span>
-                </li>
-            </ul>
+                </StaticItem>
+            </StaticList>
         </ProfileDiv>
     
     );

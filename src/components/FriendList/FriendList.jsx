@@ -1,4 +1,5 @@
-import { List } from "./FriendList.styled"
+import { List, FriendAvatar, FriendName, FriendStatus, FriendItem } from "./FriendList.styled"
+
 
 export const FriendList = ({ friends }) => {
     
@@ -10,11 +11,11 @@ export const FriendList = ({ friends }) => {
     <List class="friend-list">
                 
         {friends.map(({avatar, name, isOnline}) => (
-                <li class='status'>
-                    <span>{ isOnline } </span>
-                <img src= {avatar} alt="User avatar" width='48' />
-                <p class='name'> {name} </p>
-                </li>
+                <FriendItem class='status'>
+                    <FriendStatus>{ isOnline } </FriendStatus>
+                <FriendAvatar src= {avatar} alt="User avatar" width='48' />
+                <FriendName class='name'> {name} </FriendName>
+                </FriendItem>
             ))}
 
     
