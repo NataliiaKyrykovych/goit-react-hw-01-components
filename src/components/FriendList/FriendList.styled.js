@@ -1,43 +1,21 @@
 import styled from 'styled-components';
 
 export const List = styled.ul`
-  list-style: none;
-  margin-bottom: 50px;
-`;
-
-export const FriendAvatar = styled.img`
-  width: 60px;
-  height: 60px;
-  padding: 8px;
-  margin-right: 20px;
-  background-color: pink;
-  border-radius: 10px;
-  
-`
-export const FriendName = styled.p`
-  font-size: 18px;
-  margin-left: 20px;
-  padding-right: 8px;
-`;
-export const FriendStatus = styled.span`
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  margin-right: 10px;
-  
-  
-`;
-
-export const FriendItem = styled.li`
+  margin: 0 auto 64px;
   display: flex;
-  width: 300px;
-  background-color: yellow;
+  flex-direction: column;
   align-items: center;
-  margin: 0px auto;
-  padding: 10px;
-  border-radius: 5px;
- margin-bottom: 20px;
-  }
 `;
 
-
+export const ListItem = styled.li`
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  width: 200px;
+  margin-bottom: 16px;
+  padding: 16px 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #102445;
+`;
