@@ -30,3 +30,9 @@ export const StatsLabel = styled.span`
   margin-right: 5px;
   font-weight: 600;
 `;
+export const Title = styled.h2`
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+`;

@@ -1,4 +1,4 @@
-import {  StatSection, StatsItem, StatsList, StatsLabel,
+import {  StatSection, StatsItem, StatsList, StatsLabel, Title
 } from './Statistics.styled';
 
 function getRandomHexColor() {
@@ -7,14 +7,14 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
-export const Statistics = ({ stats }) => {
+export const Statistics = ({ title, stats }) => {
     
     return (
     
 
 
         <StatSection>
-  <h2 class="title">Upload stats</h2>
+  {title && <Title> {title} </Title>}
 
     <StatsList>
                 
